@@ -1,29 +1,27 @@
-# Instructions
+## Main Components
+- Dashboard - The main component that renders the entire dashboard layout. It allows users to search for orders, select currencies and display order details and timestamps.
 
-- clone this repo and open with your favorite code editor
+- Card - A reusable component that displays information in a card format. It is used to display 
+selected order details and timestamps.
 
-- make sure you are checked out to `master` branch
+- Dropdown - A reusable component that provides a dropdown menu for selecting currencies.
 
-- to run the app `npm install` then `npm start`
+- HeaderTitle - A component responsible for displaying the header title of the dashboard.
 
-## Please fix the following issues
+- Search - A component that allows users to search for specific orders based on an order ID.
 
-1.  In the title of the header, it displays `5 orders` but there are `6 orders` in the table. We want to display the `total` number of `orders` in the header title
+##Data
+The dashboard uses mock data stored in JSON format, which can be found in the assets directory.
 
-2.  In the table order submitted date is missing, we have timestamp data included in the `src\assets\timeStamps.json` with the corresponding ids, please combine that with the order data and make sure the order submitted date is being displayed in the table
+- data.json - Contains mock order data with details such as order ID, customer information, and order status.
 
-3.  Order Volume cell is displaying USD values, can you please make it display the currency value selected on the dropdown located in the header of the dashboard
+- timeStamps.json - Contains timestamps associated with each order.
 
-4.  Can you please add search feature on the order IDs with the search bar given in the header
+##Features
+- Search Orders: Users can search for specific orders using the order ID. The search results will be filtered accordingly.
 
-5.  Please clear the console errors and warnings.
+- Select Currency: Users can choose currencies (GBP, USD, JPY, EUR) from the dropdown menu to view order amounts in their preferred currency.
 
-6.  When user selects an order, can you populate the Card on top of the listing component as shown in the image
+- Display Order Details and Timestamps: When an order is selected, its details and associated timestamps are displayed in separate cards on the dashboard when clicked on the row table.
 
-![alt text](dashboard.JPG)
-
-## Bonus
-
-- run storybook `npm run storybook`
-
-1. Please add storybook to one of the components
+###Live link - [https://steel-eye-assignment-2.vercel.app/]
