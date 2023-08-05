@@ -10,14 +10,14 @@ selected order details and timestamps.
 
 - Search - A component that allows users to search for specific orders based on an order ID.
 
-##Data
+## Data
 The dashboard uses mock data stored in JSON format, which can be found in the assets directory.
 
 - data.json - Contains mock order data with details such as order ID, customer information, and order status.
 
 - timeStamps.json - Contains timestamps associated with each order.
 
-##Features
+## Features
 - Search Orders: Users can search for specific orders using the order ID. The search results will be filtered accordingly.
 
 - Select Currency: Users can choose currencies (GBP, USD, JPY, EUR) from the dropdown menu to view order amounts in their preferred currency.
